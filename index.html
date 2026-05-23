@@ -32,7 +32,7 @@
       </div>
 
       <nav
-        class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200 h-16 md:h-20 flex items-center px-4 md:px-8 justify-between"
+        class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200 h-16 md:h-20 flex items-center px-4 md:px-8 justify-between relative"
       >
         <a href="index.html" class="flex items-center group">
           <img
@@ -45,6 +45,28 @@
             "
           />
         </a>
+
+        <button
+          onclick="
+            document.getElementById('mobile-menu').classList.toggle('hidden')
+          "
+          class="lg:hidden text-[#002a54] hover:text-[#00A896] focus:outline-none p-2"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
         <ul
           class="hidden lg:flex space-x-8 font-bold text-[12px] uppercase tracking-wide"
         >
@@ -77,6 +99,32 @@
             >
           </li>
         </ul>
+
+        <div
+          id="mobile-menu"
+          class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl lg:hidden flex flex-col z-50"
+        >
+          <a
+            href="index.html"
+            class="block px-6 py-4 text-[#00A896] font-bold text-sm uppercase tracking-wide border-b border-slate-100 bg-slate-50"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block px-6 py-4 text-[#002a54] font-bold text-sm uppercase tracking-wide border-b border-slate-100 hover:bg-slate-50 hover:text-[#00A896]"
+            >About Us</a
+          >
+          <a
+            href="products.html"
+            class="block px-6 py-4 text-[#002a54] font-bold text-sm uppercase tracking-wide border-b border-slate-100 hover:bg-slate-50 hover:text-[#00A896]"
+            >Products</a
+          >
+          <a
+            href="contact.html"
+            class="block px-6 py-4 text-[#002a54] font-bold text-sm uppercase tracking-wide hover:bg-slate-50 hover:text-[#00A896]"
+            >Contact</a
+          >
+        </div>
       </nav>
     </header>
 
@@ -258,10 +306,10 @@
         >
           <a
             href="products.html"
-            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl block group border border-slate-200 shadow-xl"
+            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl flex flex-col items-center text-center group border border-slate-200 shadow-xl"
           >
             <div
-              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-left bg-red-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
+              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-center bg-red-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
             >
               ❤️
             </div>
@@ -276,10 +324,10 @@
           </a>
           <a
             href="products.html"
-            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl block group border border-slate-200 shadow-xl"
+            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl flex flex-col items-center text-center group border border-slate-200 shadow-xl"
           >
             <div
-              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-left bg-blue-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
+              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-center bg-blue-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
             >
               🩸
             </div>
@@ -294,10 +342,10 @@
           </a>
           <a
             href="products.html"
-            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl block group border border-slate-200 shadow-xl"
+            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl flex flex-col items-center text-center group border border-slate-200 shadow-xl"
           >
             <div
-              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-left bg-purple-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
+              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-center bg-purple-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
             >
               🧠
             </div>
@@ -312,10 +360,10 @@
           </a>
           <a
             href="products.html"
-            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl block group border border-slate-200 shadow-xl"
+            class="bento-card bg-[#ffffff] p-6 md:p-8 rounded-2xl md:rounded-3xl flex flex-col items-center text-center group border border-slate-200 shadow-xl"
           >
             <div
-              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-left bg-orange-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
+              class="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition origin-center bg-orange-50 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl"
             >
               🩺
             </div>
