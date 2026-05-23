@@ -1,0 +1,39 @@
+:root {
+  --brand-dark: #00152b;
+  --brand-primary: #002a54;
+  --brand-accent: #00a896;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f9; /* Soft contrast background */
+}
+
+/* Glass Navigation */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Smooth Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium Card Hover */
+.bento-card {
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 42, 84, 0.1);
+}

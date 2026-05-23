@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Medileo Healthcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#eef2f6] text-slate-800 flex flex-col min-h-screen">
+    <header class="sticky top-0 w-full z-50">
+      <div
+        class="bg-[#00152b] text-white text-[10px] md:text-xs py-2 px-4 md:px-8 flex flex-col md:flex-row items-center justify-between border-b border-white/10 gap-2 md:gap-0"
+      >
+        <div
+          class="flex-1 flex justify-center md:justify-start items-center text-slate-300 w-full md:w-auto"
+        >
+          <span class="mr-2 text-[#00A896]">✉</span> medileohealthcare@gmail.com
+        </div>
+        <div
+          class="flex-1 text-center font-bold tracking-widest uppercase text-slate-200 w-full md:w-auto"
+        >
+          Medileo Healthcare Pvt. Ltd.
+        </div>
+        <div class="flex-1 flex justify-center md:justify-end w-full md:w-auto">
+          <div
+            class="bg-[#00A896] px-3 py-1 rounded text-white font-bold uppercase tracking-[0.15em]"
+          >
+            WHO-GMP Certified
+          </div>
+        </div>
+      </div>
+
+      <nav
+        class="bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200 h-16 md:h-20 flex items-center px-4 md:px-8 justify-between"
+      >
+        <a href="index.html" class="flex items-center group">
+          <img
+            src="logo.png"
+            alt="Medileo Logo"
+            class="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+            onerror="
+              this.outerHTML =
+                '<h1 class=\'text-xl md:text-2xl font-extrabold text-[#002a54]\'>MEDILEO</h1>'
+            "
+          />
+        </a>
+        <ul
+          class="hidden lg:flex space-x-8 font-bold text-[12px] uppercase tracking-wide"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="text-[#002a54] hover:text-[#00A896] transition pb-1"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="text-[#002a54] hover:text-[#00A896] transition pb-1"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="products.html"
+              class="text-[#00A896] border-b-2 border-[#00A896] pb-1"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="text-[#002a54] hover:text-[#00A896] transition pb-1"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div
+      class="bg-gradient-to-br from-[#00152b] via-[#002a54] to-[#00A896] text-center pt-16 pb-28 md:pt-24 md:pb-32 px-4 md:px-8 z-10 relative"
+    >
+      <div class="relative z-10 reveal">
+        <h1
+          class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 md:mb-6 tracking-tight drop-shadow-md"
+        >
+          Therapeutic Portfolio
+        </h1>
+        <p
+          class="text-[#00A896] font-bold uppercase tracking-[0.2em] text-[10px] md:text-sm bg-white/10 inline-block px-4 py-1.5 rounded-full backdrop-blur-sm border border-white/10"
+        >
+          Formulations & Pipeline
+        </p>
+      </div>
+    </div>
+
+    <section
+      class="px-4 md:px-8 max-w-7xl mx-auto flex-grow w-full z-20 relative -mt-12 md:-mt-16 pb-16 md:pb-24"
+    >
+      <div
+        class="bg-[#ffffff] rounded-2xl md:rounded-[2rem] p-6 md:p-8 shadow-xl border border-slate-200 mb-10 reveal"
+      >
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search formulations, indications, or compositions..."
+          class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:border-[#00A896] focus:bg-white focus:ring-2 focus:ring-[#00A896]/20 outline-none text-base md:text-lg transition shadow-sm"
+        />
+      </div>
+
+      <div
+        id="product-grid"
+        class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
+      ></div>
+    </section>
+
+    <footer
+      class="bg-[#00152b] text-slate-400 py-10 md:py-12 px-4 md:px-8 mt-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] md:text-xs uppercase tracking-[0.2em]"
+      >
+        <p class="mb-4 md:mb-0">
+          &copy; 2026 Medileo Healthcare Pvt. Ltd. All Global Corporate Rights
+          Strictly Reserved.
+        </p>
+        <p class="text-[#00A896] font-bold">
+          Designed with Bright Scientific Compliance Standards.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
